@@ -1,0 +1,21 @@
+body{
+    background-color: aqua;
+}
+
+.calButtons{
+    
+    font-size: 20px;
+    border-color: black;
+    border-style: outset;
+    width: 30px;
+
+    border-width: 2px;
+}
+.screen{
+   font-size: 20px;
+    width: 10px;
+    background-color:aqua;
+    margin:10px;
+    padding: 10px;
+
+}
