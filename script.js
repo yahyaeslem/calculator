@@ -25,7 +25,7 @@ function operate(operator, numOne, numTwo){
         result = divide(numOne,numTwo)
 
     }
-    return result;
+ 
 }
 
 const screen = document.querySelector(".screen");
@@ -67,4 +67,4 @@ btnMinus.addEventListener('click', ()=> {operator = "-";leftVars =parseInt(scree
 
 btnMultiply.addEventListener('click', ()=> {operator = "*";leftVars =parseInt(screenVar); screenVar+= "*"; screen.textContent = screenVar ;})
 btnDivide.addEventListener('click', ()=> { operator = "/" ;leftVars =parseInt(screenVar); screenVar+= "/"; screen.textContent = screenVar ;})
-btnEquals.addEventListener('click', ()=> {rightVars=  parseInt(screenVar.substr(screenVar.indexOf(operator))); operate(operator,leftVars,rightVars); screen.textContent= result})
+btnEquals.addEventListener('click', ()=> {rightVars= screenVar.slice(screenVar.indexOf(operator) + 1); operate(operator,leftVars,rightVars); screenVar=""; screen.textContent= result})
