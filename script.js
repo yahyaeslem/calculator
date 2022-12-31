@@ -64,6 +64,7 @@ const btnMinus = document.querySelector(".btnMinus");
 const btnMultiply = document.querySelector(".btnMultiply");
 const btnDivide = document.querySelector(".btnDivide");
 const btnEquals = document.querySelector(".btnEquals");
+const btnDelete = document.querySelector(".btnDelete");
 //NUMBER BUTTONS
 btn1.addEventListener('click', ()=> {screenVar += "1" ; screen.textContent = screenVar ; rightVars= screenVar.substring(screenVar.indexOf(operator) +1 );})
 btn2.addEventListener('click', ()=> {screenVar += "2" ; screen.textContent = screenVar ; rightVars= screenVar.substring(screenVar.indexOf(operator) +1 );})
@@ -75,13 +76,17 @@ btn7.addEventListener('click', ()=> {screenVar += "7" ; screen.textContent = scr
 btn8.addEventListener('click', ()=> {screenVar += "8" ; screen.textContent = screenVar ; rightVars= screenVar.substring(screenVar.indexOf(operator) +1 );})
 btn9.addEventListener('click', ()=> {screenVar += "9" ; screen.textContent = screenVar ; rightVars= screenVar.substring(screenVar.indexOf(operator) +1 );})
 btn0.addEventListener('click', ()=> {screenVar += "0" ; screen.textContent = screenVar ; rightVars= screenVar.substring(screenVar.indexOf(operator) +1 );})
-btnClear.addEventListener('click', ()=> {screenVar = "" ; screen.textContent = screenVar ; screenVar ="";
- leftVars = ""
- rightVars =""
- result = 0;
- operator2="";
+btnClear.addEventListener('click', ()=> {screenVar = "" ; screen.textContent = screenVar ; screenVar =""; leftVars = ""
+rightVars =""
+result = 0;
+operator2="";
 operator="";
- operatorCheck= false;})
+screenVar="";
+operatorCheck= false;})
+btnDelete.addEventListener('click', ()=> { screenVar = screenVar.slice(0,-1) ; leftVars =screenVar.substring( (0, screenVar.indexOf(operator))); ; 
+rightVars= screenVar.substring(screenVar.indexOf(operator) +1 ); screen.textContent = screenVar ; })
+ 
+
 //PLUS  BUTTON
 btnPlus.addEventListener('click', 
 ()=> {

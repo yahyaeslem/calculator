@@ -1,43 +1,61 @@
 body{
-    display: flex;
-    background-color: aqua;
+    /* display: flex; */
+    background-color: rgb(165, 165, 165);
 }
 
 .calButtons{
     
     font-size: 50px;
-    border-color: black;
-    border-style: outset;
-    width: 30%;
-    height: 30%;
-    outline: none;
-    border-radius: 5px;
+    border-color: rgb(124, 119, 119);
+    border-style: solid;
+    width: 35%;
+    height: 35%;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 19);
+    
+}
 
+.calculator{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 900px;
+    padding: 5px;
+    border-radius: 10px;
+    border-color: rgb(180, 174, 174);
+    border-width: 10px;
+    border-style: outset;
+    margin:0;
+    padding: 0;
+    box-shadow: rgba(0, 0, 0, 19);
+}
+
+.operatorButtons{
+   
+    height: 60%;
+    width: 20;
+    
+   
+}
+.clearDel{
+    color:rgb(97, 66, 8);
     
 }
 .screen{
-    color: aliceblue;
-   font-size: 50px;
-    width: 10px;
-    background-color:rgb(129, 133, 133);
-    margin:10px;
-    padding: 10px;
-
+    display: flex;
+    font-size: 50px;
+    align-items: right;
+    justify-content: space-around;
+    width: 90%;
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+    border-style: outset;
 }
-.calculator{
-    padding: 10px;
-    border-radius: 1em;
-    height: 380px;
-    width: 400px;
-    margin: auto;
-    box-shadow: rgba(0, 0, 0, 19);
-}
-.screen{
-    border-color: black;
-    border-width: 3px;
-    border-style: dotted;
-    width: 80%;
-    height: 20%;
-    justify-content: center;
-    align-items: center;
+.numberButtons{
+    width: 900/17 px;
+    
 }
