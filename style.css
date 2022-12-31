@@ -5,7 +5,7 @@ body{
 
 .calButtons{
     
-    font-size: 20px;
+    font-size: 50px;
     border-color: black;
     border-style: outset;
     width: 30%;
@@ -16,9 +16,10 @@ body{
     
 }
 .screen{
-   font-size: 20px;
+    color: aliceblue;
+   font-size: 50px;
     width: 10px;
-    background-color:aqua;
+    background-color:rgb(129, 133, 133);
     margin:10px;
     padding: 10px;
 
