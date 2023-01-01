@@ -83,8 +83,8 @@ operator2="";
 operator="";
 screenVar="";
 operatorCheck= false;})
-btnDelete.addEventListener('click', ()=> { screenVar = screenVar.slice(0,-1) ; leftVars =screenVar.substring( (0, screenVar.indexOf(operator))); ; 
-rightVars= screenVar.substring(screenVar.indexOf(operator) +1 ); screen.textContent = screenVar ; })
+// btnDelete.addEventListener('click', ()=> { screenVar = screenVar.slice(0,-1) ; leftVars =screenVar.substring( (0, screenVar.indexOf(operator))); ; 
+// rightVars= screenVar.substring(screenVar.indexOf(operator) +1 ); screen.textContent = screenVar ; })
  
 
 //PLUS  BUTTON
